@@ -18,19 +18,37 @@ nav ul {
   margin-top: 10px;
 }
 
-nav ul li {
-  display: inline;
-  margin: 0 12px;
+/* Default layout on small screens like mobile phones; column format*/
+.nav-list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
-  color: #ffffff;
+.nav-list li {
+  margin: 8px 0; /*adds space vertically between differents items on the nav-list*/
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
+/*Layout on large screens like laptops, tablets: row format*/
+@media (min-width: 768px) {
+  .nav-list {
+    display: flex; /*Allows horizontal layout*/
+    justify-content: center;
+    gap: 40px; /* space between items */
+  }
+
+  .nav-list li {
+    margin: 0;
+  }
+  /*Allows the default flex attributes to be reset*/
+  .nav-list a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav-list a:hover {
+    text-decoration: underline;
+  }
 }
 
 section {
