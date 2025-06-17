@@ -48,7 +48,7 @@ header {
   .nav-list {
     flex-direction: column;
     align-items: center;
-    margin: 1px 0; /*top then bottom spacing from each other*/
+    margin: 0;
   }
 }
 
