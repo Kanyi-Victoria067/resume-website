@@ -11,4 +11,4 @@ A simple personal resume website built using HTML, CSS and Javascript
 
 ## Live Preview
 
-Click this to view the live resume website: 
+Click this to view the live resume website: https://kanyi-victoria067.github.io/resume-website/
